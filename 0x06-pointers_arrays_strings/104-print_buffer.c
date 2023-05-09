@@ -22,9 +22,9 @@ void print_buffer(char *b, int size)
 	{
 		y = size - x < 10 ? size - x : 10;
 		printf("%08x: ", x);
-		for (i = 0; i < 10; i++)
+		for (z = 0; z < 10; z++)
 		{
-			if (x < y)
+			if (z < y)
 				printf("%02x", *(b + x + z));
 			else
 				printf(" ");
